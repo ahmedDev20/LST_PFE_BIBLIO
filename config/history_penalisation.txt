@@ -1,0 +1,13 @@
+Msg 911, Level 16, State 1, Server AHMED\SQLEXPRESS01, Line 1
+Database 'BIBLIOTHEQUE' does not exist. Make sure that the name is entered correctly.
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+                       
+-----------------------
+2020-06-28 20:00:03.800
+
+(1 rows affected)

@@ -1,0 +1,193 @@
+#rechOper {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 900px;
+  color: white;
+}
+#rechOper tr {
+  background-color: #3a5858;
+}
+#rechOper tr td {
+  border: 1px solid white;
+}
+#rechOper td:nth-child(1),
+#rechOper td:nth-child(3) {
+  text-align: center;
+  padding: 10px;
+  width: 170px;
+}
+#rechOper td:nth-child(2) {
+  padding: 3px 7px;
+  text-align: left;
+  width: 530px;
+}
+#operations,
+.categRech {
+  font-weight: 500;
+  font-size: 15px;
+}
+.categRech {
+  background-color: white;
+  margin: 5px 0;
+  padding: 5px;
+  color: black;
+}
+#search,
+#operations,
+.categRech {
+  width: 350px;
+}
+.categRech label,
+.categRech input {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  font-weight: 500;
+}
+#sel_col {
+  width: 140px;
+}
+#search,
+#sel_col,
+#operations,
+input[type="date"] {
+  height: 35px;
+}
+button {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+#ajout {
+  box-shadow: inset 0px 1px 0px 0px #bee2f9;
+  background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+  background-color: #63b8ee;
+  border-radius: 6px;
+  border: 1px solid #3866a3;
+  display: inline-block;
+  cursor: pointer;
+  color: #14396a;
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #7cacde;
+  margin-bottom: 5px;
+}
+#retourner,
+#modifier,
+#modif {
+  box-shadow: inset 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 6px;
+  border: 1px solid #ffaa22;
+  cursor: pointer;
+  color: #333333;
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+}
+#valider,
+.add #ajouter {
+  box-shadow: inset 0px 1px 0px 0px #a4e271;
+  background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+  background-color: #89c403;
+  border-radius: 6px;
+  border: 1px solid #74b807;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528009;
+}
+#back {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #777777;
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+#ajout:hover {
+  background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+  background-color: #468ccf;
+}
+#retourner:hover,
+#modifier:hover,
+#modif:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
+}
+#bac:hover {
+  background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  background-color: #dfdfdf;
+}
+#modifier,
+#back {
+  display: none;
+}
+.add #retour:active,
+#back:active,
+#modifier:active,
+#ajout:active,
+#retourner:active {
+  position: relative;
+  top: 1px;
+}
+#valider:hover,
+.add #ajouter:hover {
+  background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+  background-color: #77a809;
+}
+#valider:active,
+.add #ajouter:active {
+  position: relative;
+  top: 1px;
+}
+.navBtn {
+  text-align: center;
+  font-size: 22px;
+  padding: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  #search,
+  #operations,
+  .categRech,
+  #rechOper {
+    width: 100%;
+  }
+  .categRech input {
+    width: initial;
+  }
+  .categRech,
+  #operations {
+    font-size: 12px;
+  }
+  #sel_col {
+    width: 80px;
+  }
+  #rechOper td:nth-child(1) {
+    width: 10%;
+    padding: 0;
+  }
+  #rechOper td:nth-child(2) {
+    padding: 3px;
+  }
+  #rechOper td:nth-child(3) {
+    padding: 3px;
+  }
+  button {
+    font-size: 12px;
+    padding: 6px;
+  }
+}

@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container,
+header,
+footer {
+  color: black;
+}
+
+/*** style header & footer*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.horaire,
+.pricing-table,
+.livres,
+.list-livres,
+.list-offres,
+.choix,
+.container,
+header,
+footer {
+  width: 100%;
+  margin: 0;
+}
+.presentation,
+.list-livres,
+.list-offres {
+  padding: 20px 0px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 38px 10px 30px;
+}
+header ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  color: #17252a;
+  font-size: large;
+  font-weight: 500;
+  transition: all 0.5s ease 0s;
+}
+.logo {
+  flex: 1;
+}
+.active {
+  color: #3aafa9;
+}
+header ul li a::before {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid black;
+  transition: all 0.5s ease 0s;
+  width: 0%;
+  height: 25px;
+}
+header ul li a:hover::before {
+  color: #3aafa9;
+  cursor: pointer;
+  width: 90%;
+}
+footer {
+  text-align: center;
+  margin-top: 200px;
+  padding: 10px;
+  background: #3aafa9;
+  font-weight: 500;
+}
+
+/***bienvenu et horaire*/
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.presentation h1 {
+  text-align: center;
+  font-size: 45px;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 10px;
+  animation: move ease 1s 0s;
+}
+.presentation h3 {
+  padding: 20px 0px;
+  font-size: 25px;
+}
+.horaire {
+  text-align: center;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+/***liste des offres et des livres*/
+.livres {
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+.list-offres,
+.list-livres {
+  text-align: center;
+}
+.cover {
+  word-wrap: break-word;
+  padding: 20px;
+}
+.cover img {
+  margin-bottom: 10px;
+  border: 5px solid black;
+}
+.pricing-table > div:hover,
+.cover img:hover {
+  transform: scale(1.1);
+}
+.pricing-table,
+.livres {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.details {
+  list-style: none;
+}
+.details button {
+  box-shadow: inset 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 6px;
+  border: 1px solid #ffaa22;
+  cursor: pointer;
+  outline: none;
+  color: #333333;
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+  padding: 10px;
+  font-size: 18px;
+}
+.details button:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
+}
+.details button:active {
+  position: relative;
+  top: 1px;
+}
+div[class*="card"] {
+  border-radius: 20px;
+  font-size: 40px;
+  text-align: center;
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.76);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.pricing-table > div,
+.cover img {
+  transition: all 0.3s ease 0s;
+}
+.card1 {
+  background: linear-gradient(#48e6f8, #077a73);
+}
+.card2 {
+  background: linear-gradient(#93fa74, #1c7e13);
+}
+.card3 {
+  background: linear-gradient(#f87b55, #7c1008);
+}
+
+/*** Animation */
+@keyframes move {
+  from {
+    transform: scale(0.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/*** Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+  header ul {
+    flex: 2;
+  }
+  header ul li a,
+  .presentation h3,
+  footer {
+    font-size: 14px;
+    text-align: center;
+  }
+  .presentation h1 {
+    font-size: 18px;
+  }
+  .pricing-table {
+    flex-direction: column;
+    transform: scale(0.8);
+  }
+}
+
+/*** Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .choix {
+    width: 100%;
+  }
+  .container {
+    overflow-x: hidden;
+  }
+  .presentation h1 {
+    font-size: 20px;
+  }
+  .presentation h3,
+  .choix li {
+    font-size: 15px;
+  }
+  .pricing-table {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  min-height: 100%;
+}
+
+.container {
+  width: 900px;
+  margin: 0px auto;
+  background: lightgoldenrodyellow;
+  text-align: center;
+}
+
+/*** barre de recherche*/
+.rechDiv {
+  padding: 10px 10px 10px 3px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3a5858;
+}
+.rechDiv td,
+.recherche td {
+  padding: 5px;
+}
+.rechDates {
+  display: none;
+  align-items: center;
+  color: white;
+}
+.rechDates input {
+  height: 32px;
+}
+#search {
+  width: 400px;
+  padding: 3px 0px 5px 3px;
+  font-size: 1rem;
+}
+#search,
+#retard,
+#sel_col,
+.div-retard {
+  outline: none;
+  height: 40px;
+  border: none;
+}
+
+.div-retard {
+  margin-right: 20px;
+  padding: 5px;
+  width: 150px;
+  color: black;
+  background-color: white;
+}
+
+#retard {
+  outline: 1px solid white;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  -webkit-box-shadow: inset 0px 0px 0px 2px rgba(0, 100, 255, 1);
+  -moz-box-shadow: inset 0px 0px 0px 2px rgba(0, 100, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 100, 255, 1);
+}
+
+/***style global des tableaux*/
+.data,
+.dataAbonn,
+.Livreshead,
+.table-head {
+  text-align: center;
+  border-collapse: collapse;
+  width: 900px;
+}
+table th,
+table td {
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+}
+.table-wrap {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  height: 550px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: transparent;
+}
+/*** Feedback de recherche */
+h1 {
+  text-align: center;
+  font-size: 29px;
+  padding: 20px;
+  margin: 10px;
+}
+/*** Tableau des emprunts et historique */
+thead td {
+  position: sticky;
+  font-weight: bolder;
+  top: 0;
+}
+.data tbody tr td:nth-child(3) {
+  text-align: left;
+  padding-left: 7px;
+  word-break: break-word;
+}
+.data tr td:nth-child(1) {
+  width: 160px;
+}
+.data tr td:nth-child(2) {
+  width: 100px;
+}
+.data tr td:nth-child(3) {
+  width: 300px;
+}
+.data tr td:nth-child(4) {
+  width: 170px;
+}
+.data tr td:nth-child(5) {
+  width: 150px;
+}
+/*** Tableau des abonnements */
+.dataAbonn tr td:nth-child(1) {
+  width: 170px;
+}
+.dataAbonn tr td:nth-child(3),
+.dataAbonn tr td:nth-child(5) {
+  width: 200px;
+}
+.dataAbonn tr td:nth-child(2) {
+  width: 120px;
+}
+.dataAbonn tr td:nth-child(4) {
+  width: 150px;
+}
+.dataAbonn tr td:nth-child(6) {
+  width: 60px;
+}
+input[type="checkbox"] {
+  outline: 1px solid white;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  -webkit-box-shadow: inset 0px 0px 0px 2px rgba(0, 100, 255, 1);
+  -moz-box-shadow: inset 0px 0px 0px 2px rgba(0, 100, 255, 1);
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 100, 255, 1);
+}
+/*** Operations dabonnements */
+#rechOper {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: #3a5858;
+  width: 900px;
+  margin-bottom: 20px;
+}
+
+#rechOper td:nth-child(1) {
+  width: 275px;
+}
+#rechOper td:nth-child(2) {
+  width: 460px;
+}
+#rechOper td:nth-child(3) {
+  width: 150px;
+}
+#rechOper tr td {
+  height: 60px;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+}
+#operations {
+  outline: none;
+  height: 40px;
+}
+#valider {
+  padding: 10px;
+  outline: none;
+  box-shadow: inset 0px 1px 0px 0px #a4e271;
+  background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+  background-color: #89c403;
+  border-radius: 6px;
+  border: 1px solid #74b807;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528009;
+}
+#retour {
+  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #777777;
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+#retour:hover {
+  background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  background-color: #dfdfdf;
+}
+#valider:hover {
+  background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+  background-color: #77a809;
+}
+#valider:active,
+#retour:active {
+  position: relative;
+  top: 1px;
+}
+/*** Tableau des livres */
+#categLivres {
+  outline: none;
+  font-weight: 500;
+  font-size: 13px;
+  height: 40px;
+  width: 150px;
+}
+#dataLivres {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+#dataLivres td:nth-child(2) {
+  text-align: left;
+  padding-left: 7px;
+}
+#dataLivres tr td:nth-child(1) {
+  width: 150px;
+}
+#dataLivres tr td:nth-child(2) {
+  width: 150px;
+}
+#dataLivres tr td:nth-child(3) {
+  width: 150px;
+}
+.details-livre {
+  margin: 0 auto;
+  display: flex;
+  width: 800px;
+}
+.details-livre img {
+  width: 200px;
+  margin: 20px;
+  border: 2px solid black;
+}
+.details-livre ul {
+  list-style: none;
+}
+.details-livre ul li {
+  text-align: left;
+  font-size: 20px;
+  margin: 40px;
+}
+
+/*** couleurs */
+thead td,
+thead th {
+  background: #9b8c38;
+}
+
+.data tr:nth-child(odd),
+.recherche tr:nth-child(odd),
+.dataAbonn tr:nth-child(odd) {
+  background: #e6d3a8;
+}
+
+.data tr:nth-child(even),
+.dataAbonn tr:nth-child(even) {
+  background: #f7f1e3;
+}
+
+.table-wrap::-webkit-scrollbar {
+  width: 8px;
+  background-color: #3a5858;
+  border-right: 2px solid white;
+}
+
+.table-wrap::-webkit-scrollbar-thumb {
+  background-color: #f0932b;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/*** Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .rechDiv {
+    flex-wrap: wrap;
+    height: 150px;
+  }
+  table,
+  .container,
+  .rechDiv,
+  #search,
+  #categ {
+    width: 100% !important;
+  }
+  table {
+    font-size: 12px;
+  }
+  .dataAbonn th {
+    font-size: 10px;
+  }
+  #categ {
+    font-size: 8px;
+    word-wrap: break-word;
+  }
+  #sel_col {
+    width: 150px;
+  }
+  .details-livre,
+  .details-livre ul li,
+  .details-livre img {
+    margin: 0px;
+  }
+  .details-livre,
+  #operations {
+    width: 100%;
+  }
+  #valider {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .details-livre img {
+    margin: 5px;
+  }
+  .details-livre ul li {
+    word-wrap: break-word;
+    margin: 20px 0px 10px 5px;
+    font-size: 15px;
+  }
+}
+/*** Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .container,
+  .table-wrap {
+    height: 100vh;
+  }
+  .data {
+    flex-direction: column;
+  }
+}
